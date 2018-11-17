@@ -194,36 +194,7 @@
       "id": 16,
       "name": "A'Koba",
       "picture": "https://image.ibb.co/f3n037/A_Koba_1.jpg",
-      "chatlog": [
-        null,
-        {
-          "text": "l;lsfagl",
-          "timestamp": "2018-11-17T18:11:00.923Z",
-          "side": "left",
-          "message_id": 1
-        },
-        null,
-        {
-          "text": "RESPONSE: l;lsfagl",
-          "timestamp": "2018-11-17T18:11:01.262Z",
-          "side": "right",
-          "message_id": 3
-        },
-        null,
-        {
-          "text": "fsklasfa;lsf alsfafs flasfasl fslsfdl",
-          "timestamp": "2018-11-17T18:11:08.894Z",
-          "side": "left",
-          "message_id": 5
-        },
-        null,
-        {
-          "text": "RESPONSE: fsklasfa;lsf alsfafs flasfasl fslsfdl",
-          "timestamp": "2018-11-17T18:11:09.261Z",
-          "side": "right",
-          "message_id": 7
-        }
-      ]
+      "chatlog": []
     },
     {
       "id": 17,
