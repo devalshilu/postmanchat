@@ -71,7 +71,7 @@ class ChatBox extends Component {
                     <div className="incoming_msg_img"> <img src={this.props.user && this.props.user.picture} alt=" picture" /> </div>
                     <span>{this.props.user && this.props.user.name}</span>
                 </div>
-                <div className="msg_history">
+                <div className="msg_history" >
                     {this.sortedchats(this.state.chats).map((chat, index) => (
                         (chat.side == 'left' ?
                             <div className="outgoing_msg">
@@ -91,8 +91,8 @@ class ChatBox extends Component {
                 </div>
                 <div className="type_msg">
                     <div className="input_msg_write">
-                        <input type="text" className="write_msg" name="msg" onChange={this.onChange} value={this.state.msg} placeholder="Type a message" />
-                        <button className="msg_send_btn" type="button" onClick={() => this.doSend(this.state.msg)} ><i className="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        <input type="text" className="write_msg" name="msg" onChange={this.onChange} value={this.state.msg} onKeyPress={(e) => {(e.key === 'Enter' ? this.doSend(this.state.msg) : null)}} placeholder="Type a message" />
+                        <button className="msg_send_btn" type="button"  onClick={() => this.doSend(this.state.msg)} ><i className="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>

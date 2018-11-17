@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
-const adapter = new FileSync('db.json')
+const adapter = new FileSync('db.json');
 const db = low(adapter)
 db.defaults({ recentChats: [], profile: {}, allFriends: [] })
   .value()
